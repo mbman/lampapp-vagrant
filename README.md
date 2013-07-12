@@ -9,12 +9,12 @@ and you can connect to MySQL remotely using the same IP as root:foobar
 
 This is an example for LAMPapp Vagrant Chef cookbook:
 
-  - https://github.com/mbman/lampapp
+  https://github.com/mbman/lampapp
 
 REQUIREMENTS
 ============
 
-  - http://www.vagrantup.com/
+  http://www.vagrantup.com/
 
 SETUP
 =====
@@ -26,5 +26,5 @@ SETUP
 Your project is now running on a LAMP server and can be access using
 the static IP address, with or withour SSL:
     
-  - http://192.168.56.101 
-  - https://192.168.56.101 
+  http://192.168.56.101 
+  https://192.168.56.101 

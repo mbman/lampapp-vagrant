@@ -1,12 +1,30 @@
 LAMPapp Vagrant
 ===============
 
-Vagrant setup that runs your project on LAMP server with minimal config.
+Vagrant setup that runs your local project on LAMP server with minimal config.
 
-  - Install Vagrant
+Your project is available on 192.168.56.101 IP (*.vagrant.dev alias)
+and you can connect to MySQL remotely using the same IP as root:foobar
+
+
+This is an example for LAMPapp Vagrant Chef cookbook:
+
+    https://github.com/mbman/lampapp-vagrant
+
+REQUIREMENTS
+============
+
+  - http://www.vagrantup.com/
+
+SETUP
+=====
+
   - Clone, fork or unzip this repo into your project root
-  - initialize all cookbook submodules
-  - run "vagrant up" from project root
+  - Initialize all cookbook submodules
+  - Run "vagrant up" from project root
 
-Your project is available at 192.168.56.101 (*.vagrant.dev alias) and 
-you can connect to MySQL remotely using the same IP as root:foobar
+Your project is now running on a LAMP server and can be access using
+the static IP address, with or withour SSL:
+    
+    http://192.168.56.101 
+    https://192.168.56.101 

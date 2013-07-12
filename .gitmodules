@@ -1,0 +1,27 @@
+[submodule "cookbooks/apache2"]
+	path = cookbooks/apache2
+	url = git@github.com:opscode-cookbooks/apache2.git
+[submodule "cookbooks/apt"]
+	path = cookbooks/apt
+	url = git@github.com:opscode-cookbooks/apt.git
+[submodule "cookbooks/database"]
+	path = cookbooks/database
+	url = git@github.com:opscode-cookbooks/database.git
+[submodule "cookbooks/lampapp"]
+	path = cookbooks/lampapp
+	url = git@github.com:mbman/lampapp.git
+[submodule "cookbooks/openssl"]
+	path = cookbooks/openssl
+	url = git@github.com:opscode-cookbooks/openssl.git
+[submodule "cookbooks/build-essential"]
+	path = cookbooks/build-essential
+	url = git@github.com:opscode-cookbooks/build-essential.git
+[submodule "cookbooks/jolicode-php"]
+	path = cookbooks/jolicode-php
+	url = git@github.com:jolicode/chef-cookbook-php.git
+[submodule "cookbooks/mysql"]
+	path = cookbooks/mysql
+	url = git@github.com:opscode-cookbooks/mysql.git
+[submodule "cookbooks/selfsigned_certificate"]
+	path = cookbooks/selfsigned_certificate
+	url = git@github.com:cgravier/selfsigned_certificate.git

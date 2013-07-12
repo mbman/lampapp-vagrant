@@ -24,7 +24,7 @@ SETUP
   - Run "vagrant up" from project root
 
 Your project is now running on a LAMP server and can be access using
-the static IP address, with or withour SSL:
+the static IP address, with or without SSL:
     
-  http://192.168.56.101 
-  https://192.168.56.101 
+  - http://192.168.56.101 
+  - https://192.168.56.101 

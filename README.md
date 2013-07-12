@@ -9,7 +9,7 @@ and you can connect to MySQL remotely using the same IP as root:foobar
 
 This is an example for LAMPapp Vagrant Chef cookbook:
 
-    https://github.com/mbman/lampapp-vagrant
+    https://github.com/mbman/lampapp
 
 REQUIREMENTS
 ============

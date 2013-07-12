@@ -16,12 +16,15 @@
 [submodule "cookbooks/build-essential"]
 	path = cookbooks/build-essential
 	url = git@github.com:opscode-cookbooks/build-essential.git
-[submodule "cookbooks/jolicode-php"]
-	path = cookbooks/jolicode-php
-	url = git@github.com:jolicode/chef-cookbook-php.git
 [submodule "cookbooks/mysql"]
 	path = cookbooks/mysql
 	url = git@github.com:opscode-cookbooks/mysql.git
 [submodule "cookbooks/selfsigned_certificate"]
 	path = cookbooks/selfsigned_certificate
 	url = git@github.com:cgravier/selfsigned_certificate.git
+[submodule "cookbooks/php"]
+	path = cookbooks/php
+	url = git@github.com:opscode-cookbooks/php.git
+[submodule "cookbooks/xml"]
+	path = cookbooks/xml
+	url = git@github.com:opscode-cookbooks/xml.git

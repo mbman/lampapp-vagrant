@@ -28,3 +28,6 @@
 [submodule "cookbooks/xml"]
 	path = cookbooks/xml
 	url = git@github.com:opscode-cookbooks/xml.git
+[submodule "cookbooks/git"]
+	path = cookbooks/git
+	url = git@github.com:opscode-cookbooks/git.git

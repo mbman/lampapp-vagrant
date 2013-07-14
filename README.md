@@ -16,12 +16,15 @@ REQUIREMENTS
 
   http://www.vagrantup.com/
 
+Chef cookbook dependencies are included as git submodules and need to be initialized.
+
 SETUP
 =====
 
   - Clone, fork or unzip this repo into your project ("vagrant" for instance)
   - Initialize all cookbook submodules
-  - Set the "config.vm.synced_folder" Vagrantfile attribute to your public dir path in Vagrantfile
+  - Set the "config.vm.synced_folder" Vagrantfile value to your web root directory path
+  - Set the "config.lampapp.path" Vagrantfile value value to your public dir path relative to web root
   - Run "vagrant up" from the same directory Vagrantfile is located in
 
 Your project is now running on a LAMP server and can be access using

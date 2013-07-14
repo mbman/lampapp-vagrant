@@ -27,8 +27,9 @@ SETUP
 2.  Recursively `git submodule init` & `git submodule update` all `vagrant/` and `vagrant/cookbooks/` git submodules
 
 3.  Copy `vagrant/Vagranfile` to your project root and set:
-    `chef.cookbooks_path` - path to cookbooks dir (`vagrant/cookbooks/`)
-    `chef.lampapp.path` - relative path to public directory
+    
+    - `chef.cookbooks_path` - path to cookbooks dir (`vagrant/cookbooks/`)
+    - `chef.lampapp.path` - relative path to public directory
 
 4.  Run `vagrant up` from your project root
 

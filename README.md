@@ -16,6 +16,8 @@ REQUIREMENTS
 
   http://www.vagrantup.com/
 
+NFS share is activated by default for better performance and must me installed on host machine (windows not supported).
+
 Chef cookbook dependencies are included as git submodules and need to be initialized.
 
 SETUP

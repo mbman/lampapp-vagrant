@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     config.vm.network :private_network, ip: "192.168.56.101"
     config.ssh.forward_agent = true
 
-    config.vm.synced_folder "./", "/var/www", id: "vagrant-root"
+    config.vm.synced_folder "./", "/var/www", id: "vagrant-root", :nfs => true
     
     config.vm.provision "chef_solo" do |chef|
         chef.add_recipe "lampapp"

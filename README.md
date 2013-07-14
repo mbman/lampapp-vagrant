@@ -11,7 +11,7 @@ This is an example usage of **LAMPapp Vagrant Chef** cookbook:
 
   https://github.com/mbman/lampapp
 
-REQUIREMENTS
+Requirements
 ------------
 
   http://www.vagrantup.com/
@@ -19,19 +19,20 @@ REQUIREMENTS
 - **NFS share** is activated by default for better performance and must me installed on host machine (windows not supported).
 - ***Chef cookbook dependencies** are included as git submodules and need to be initialized.
 
-SETUP
+Setup
 -----
 
 1.  Clone or unzip this repo into your project's `vagrant/` dir
 
 2.  Recursively `git submodule init` & `git submodule update` all `vagrant/` and `vagrant/cookbooks/` git submodules
 
-3.  Copy `vagrant/Vagranfile` to your project root and set:
-    
-    - `chef.cookbooks_path` - path to cookbooks dir (`vagrant/cookbooks/`)
-    - `chef.lampapp.path` - relative path to public directory
+3.  Copy `vagrant/Vagranfile` to your project root and change values
 
-4.  Run `vagrant up` from your project root
+4.  `chef.cookbooks_path` - path to cookbooks dir (`vagrant/cookbooks/`)
+    
+5.  `chef.lampapp.path` - relative path to public directory
+
+6.  Run `vagrant up` from your project root
 
 
 Your project is now running on a LAMP server and can be access using

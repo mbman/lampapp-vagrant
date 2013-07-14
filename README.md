@@ -23,11 +23,17 @@ Chef cookbook dependencies are included as git submodules and need to be initial
 SETUP
 =====
 
-  - Clone, fork or unzip this repo into your project ("vagrant" for instance)
-  - Initialize all cookbook submodules
-  - Set "config.vm.synced_folder" Vagrantfile value to your web root directory path
-  - Set "config.lampapp.path" to your public dir path relative to web root
-  - Run "vagrant up" from the same directory Vagrantfile is located in
+  1. Clone or unzip this repo into your project's "vagrant/" dir
+  
+  2. Recursively git submodule init & update all "vagrant/" and "vagrant/cookbooks/" git submodules
+  
+  3. Copy "vagrant/Vagranfile" to your project root and set:
+
+    - "chef.cookbooks_path" - path to cookbooks dir ("vagrant/cookbooks/")
+    - "chef.lampapp.path" - relative path to public directory
+  
+  4. Run "vagrant up" from your project root
+
 
 Your project is now running on a LAMP server and can be access using
 the static IP address, with or without SSL:

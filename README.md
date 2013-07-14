@@ -23,8 +23,8 @@ SETUP
 
   - Clone, fork or unzip this repo into your project ("vagrant" for instance)
   - Initialize all cookbook submodules
-  - Set the "config.vm.synced_folder" Vagrantfile value to your web root directory path
-  - Set the "config.lampapp.path" Vagrantfile value value to your public dir path relative to web root
+  - Set "config.vm.synced_folder" Vagrantfile value to your web root directory path
+  - Set "config.lampapp.path" to your public dir path relative to web root
   - Run "vagrant up" from the same directory Vagrantfile is located in
 
 Your project is now running on a LAMP server and can be access using

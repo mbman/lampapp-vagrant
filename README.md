@@ -19,9 +19,10 @@ REQUIREMENTS
 SETUP
 =====
 
-  - Clone, fork or unzip this repo into your project root
+  - Clone, fork or unzip this repo into your project ("vagrant" for instance)
   - Initialize all cookbook submodules
-  - Run "vagrant up" from project root
+  - Set the "config.vm.synced_folder" Vagrantfile attribute to your public dir path in Vagrantfile
+  - Run "vagrant up" from the same directory Vagrantfile is located in
 
 Your project is now running on a LAMP server and can be access using
 the static IP address, with or without SSL:

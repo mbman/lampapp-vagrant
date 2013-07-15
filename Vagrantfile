@@ -21,6 +21,9 @@ Vagrant.configure("2") do |config|
                 :password => "foobar",
                 :ip => "192.168.56.101",
                 :path => "",
+            },
+            :php => {
+                :directives => {"date.timezone" => "Europe/Zagreb"}
             }
         })
     end

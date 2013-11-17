@@ -1,7 +1,7 @@
 LAMPapp Vagrant
 ===============
 
-Vagrant setup that runs your local project on LAMP server with minimal config.
+Vagrant setup that runs your local project on Debian Wheezy LAMP server with minimal config.
 
 Your project is available on **192.168.56.101** IP (`*.vagrant.dev` alias)
 and you can connect to MySQL remotely using the same IP as **root::foobar**
@@ -29,7 +29,7 @@ Setup
 3.  Copy `vagrant/Vagranfile` to your project root and change values
 
 4.  `chef.cookbooks_path` - path to cookbooks dir (`vagrant/cookbooks/`)
-    
+
 5.  `chef.lampapp.path` - relative path to public directory
 
 6.  Run `vagrant up` from your project root
@@ -37,9 +37,9 @@ Setup
 
 Your project is now running on a LAMP server and can be access using
 the static IP address (modify your `hosts` file for domain usage), with or without SSL:
-    
-- http://192.168.56.101 
-- https://192.168.56.101 
+
+- http://192.168.56.101
+- https://192.168.56.101
 - http(s)://vagrant.dev
 - http(s)://www.vagrant.dev
 - http(s)://*.vagrant.dev

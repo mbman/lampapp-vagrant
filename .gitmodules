@@ -18,7 +18,7 @@
 	url = git@github.com:opscode-cookbooks/build-essential.git
 [submodule "cookbooks/mysql"]
 	path = cookbooks/mysql
-	url = git@github.com:opscode-cookbooks/mysql.git
+	url = git@github.com:mbman/mysql.git
 [submodule "cookbooks/selfsigned_certificate"]
 	path = cookbooks/selfsigned_certificate
 	url = git@github.com:cgravier/selfsigned_certificate.git
@@ -31,3 +31,15 @@
 [submodule "cookbooks/git"]
 	path = cookbooks/git
 	url = git@github.com:opscode-cookbooks/git.git
+[submodule "cookbooks/aws"]
+	path = cookbooks/aws
+	url = git@github.com:opscode-cookbooks/aws.git
+[submodule "cookbooks/postgres"]
+	path = cookbooks/postgres
+	url = git@github.com:wanelo-chef/postgres.git
+[submodule "cookbooks/postgresql"]
+	path = cookbooks/postgresql
+	url = git@github.com:opscode-cookbooks/postgresql.git
+[submodule "cookbooks/xfs"]
+	path = cookbooks/xfs
+	url = git@github.com:opscode-cookbooks/xfs.git

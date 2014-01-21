@@ -43,3 +43,24 @@
 [submodule "cookbooks/mysql"]
 	path = cookbooks/mysql
 	url = git@github.com:mbman/mysql.git
+[submodule "cookbooks/dmg"]
+	path = cookbooks/dmg
+	url = git@github.com:opscode-cookbooks/dmg.git
+[submodule "cookbooks/windows"]
+	path = cookbooks/windows
+	url = git@github.com:opscode-cookbooks/windows.git
+[submodule "cookbooks/iis"]
+	path = cookbooks/iis
+	url = git@github.com:opscode-cookbooks/iis.git
+[submodule "cookbooks/chef_handler"]
+	path = cookbooks/chef_handler
+	url = git@github.com:opscode-cookbooks/chef_handler.git
+[submodule "cookbooks/yum-epel"]
+	path = cookbooks/yum-epel
+	url = git@github.com:opscode-cookbooks/yum-epel.git
+[submodule "cookbooks/yum"]
+	path = cookbooks/yum
+	url = git@github.com:opscode-cookbooks/yum.git
+[submodule "cookbooks/runit"]
+	path = cookbooks/runit
+	url = git@github.com:hw-cookbooks/runit.git

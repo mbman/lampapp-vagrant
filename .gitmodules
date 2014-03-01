@@ -61,3 +61,6 @@
 [submodule "cookbooks/runit"]
 	path = cookbooks/runit
 	url = git@github.com:hw-cookbooks/runit.git
+[submodule "cookbooks/mysql"]
+	path = cookbooks/mysql
+	url = git@github.com:opscode-cookbooks/mysql.git

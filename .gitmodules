@@ -40,9 +40,6 @@
 [submodule "cookbooks/xfs"]
 	path = cookbooks/xfs
 	url = git@github.com:opscode-cookbooks/xfs.git
-[submodule "cookbooks/mysql"]
-	path = cookbooks/mysql
-	url = git@github.com:opscode-cookbooks/mysql.git 
 [submodule "cookbooks/dmg"]
 	path = cookbooks/dmg
 	url = git@github.com:opscode-cookbooks/dmg.git

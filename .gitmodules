@@ -67,3 +67,15 @@
 [submodule "cookbooks/homebrew"]
 	path = cookbooks/homebrew
 	url = git@github.com:opscode-cookbooks/homebrew.git
+[submodule "cookbooks/iptables"]
+	path = cookbooks/iptables
+	url = git@github.com:opscode-cookbooks/iptables.git
+[submodule "cookbooks/logrotate"]
+	path = cookbooks/logrotate
+	url = git@github.com:stevendanna/logrotate.git
+[submodule "cookbooks/pacman"]
+	path = cookbooks/pacman
+	url = git@github.com:jesseadams/pacman.git
+[submodule "cookbooks/mysql-chef_gem"]
+	path = cookbooks/mysql-chef_gem
+	url = git@github.com:opscode-cookbooks/mysql-chef_gem.git

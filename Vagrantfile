@@ -2,9 +2,8 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-    config.vm.hostname = "wheezy64"
-    config.vm.box = "wheezy64"
-    config.vm.box_url = "http://vagrantboxes.footballradar.com/wheezy64.box"
+    config.vm.hostname = "vagrat"
+    config.vm.box = "mbman/debian-7"
 
     config.vm.network :private_network, ip: "192.168.56.101"
     config.ssh.forward_agent = true

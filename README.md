@@ -1,45 +1,24 @@
-LAMPapp Vagrant
-===============
+# LAMPapp Vagrant
 
-Vagrant setup that runs your local project on Debian Wheezy LAMP server with minimal config.
+Vagrant setup that runs your web app on Debian Wheezy, with
+minimal configuration and all the features provided by Chef cookbooks.
 
-Your project is available on **192.168.56.101** IP (`*.vagrant.dev` alias)
-and you can connect to MySQL remotely using the same IP as **root::foobar**
+## Requirements
 
+   * [Vagrant 1.5+](http://www.vagrantup.com/)
+   * [Virtualbox](https://www.virtualbox.org/) or some other Vagrant provider
+   * Optional: **NFS share** is activated by default for better performance and must me installed on host machine
 
-This is an example usage of **LAMPapp Vagrant Chef** cookbook:
+## How to use
 
-  https://github.com/mbman/lampapp
-
-Requirements
-------------
-
-  http://www.vagrantup.com/
-
-- **NFS share** is activated by default for better performance and must me installed on host machine (windows not supported).
-- **Chef cookbook dependencies** are included as git submodules and need to be initialized.
-
-Setup
------
-
-1.  Clone or unzip this repo into your project's `vagrant/` dir
-
-2.  Recursively `git submodule init` & `git submodule update` all `vagrant/` and `vagrant/cookbooks/` git submodules
-
-3.  Copy `vagrant/Vagranfile` to your project root and change values
-
-4.  `chef.cookbooks_path` - path to cookbooks dir (`vagrant/cookbooks/`)
-
-5.  `chef.lampapp.path` - relative path to public directory
-
-6.  Run `vagrant up` from your project root
-
-
-Your project is now running on a LAMP server and can be access using
-the static IP address (modify your `hosts` file for domain usage), with or without SSL:
-
-- http://192.168.56.101
-- https://192.168.56.101
-- http(s)://vagrant.dev
-- http(s)://www.vagrant.dev
-- http(s)://*.vagrant.dev
+   * Clone or unzip this repo into your project's `vagrant/` dir:
+   `git clone git@github.com:mbman/lampapp-vagrant.git vagrant`
+   * Initialize Chef cookbooks:
+   `cd vagrant/ && git submodule update --init --recursive && cd ../`
+   * Copy Vagrantfile into project root dir:
+   `cp vagrant/Vagrantfile .`
+   * Modify Vagrantile's `chef.lampapp.path` to point to your projects public web root
+   * Modify Vagrantile's `chef.cookbooks_path = "cookbooks"` to `chef.cookbooks_path = "vagrant/cookbooks"`
+   * Run `vagrant up` to start up the VM
+   * Your web app is now available at [192.168.56.101](https://192.168.56.101/)
+   * Run `vagrant halt` to power off the VM

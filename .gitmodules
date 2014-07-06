@@ -79,3 +79,12 @@
 [submodule "cookbooks/mysql-chef_gem"]
 	path = cookbooks/mysql-chef_gem
 	url = git@github.com:opscode-cookbooks/mysql-chef_gem.git
+[submodule "cookbooks/freebsd"]
+	path = cookbooks/freebsd
+	url = git@github.com:opscode-cookbooks/freebsd.git
+[submodule "cookbooks/yum-mysql-community"]
+	path = cookbooks/yum-mysql-community
+	url = git@github.com:opscode-cookbooks/yum-mysql-community.git
+[submodule "cookbooks/chef-sugar"]
+	path = cookbooks/chef-sugar
+	url = git@github.com:sethvargo/chef-sugar.git

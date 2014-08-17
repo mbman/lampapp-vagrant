@@ -88,3 +88,9 @@
 [submodule "cookbooks/chef-sugar"]
 	path = cookbooks/chef-sugar
 	url = git@github.com:sethvargo/chef-sugar.git
+[submodule "cookbooks/sphinx"]
+	path = cookbooks/sphinx
+	url = git@github.com:jesseadams/sphinx-cookbook.git
+[submodule "cookbooks/percona"]
+	path = cookbooks/percona
+	url = git@github.com:phlipper/chef-percona.git

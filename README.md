@@ -1,24 +1,19 @@
 # LAMPapp Vagrant
 
-Vagrant setup that runs your web app on Debian Wheezy, with
-minimal configuration and all the features provided by Chef cookbooks.
+Example usage of [LAMPapp](https://github.com/mbman/lampapp) Chef cookbook
 
 ## Requirements
 
    * [Vagrant 1.5+](http://www.vagrantup.com/)
    * [Virtualbox](https://www.virtualbox.org/) or some other Vagrant provider
+   * [ChefDK](http://downloads.getchef.com/chef-dk)
    * Optional: **NFS share** is activated by default for better performance and must me installed on host machine
 
 ## How to use
 
-   * Clone or unzip this repo into your project's `vagrant/` dir:
-   `git clone git@github.com:mbman/lampapp-vagrant.git vagrant`
-   * Initialize Chef cookbooks:
-   `cd vagrant/ && git submodule update --init --recursive && cd ../`
-   * Copy Vagrantfile into project root dir:
-   `cp vagrant/Vagrantfile .`
-   * Modify Vagrantile's `chef.lampapp.path` to point to your projects public web root
-   * Modify Vagrantile's `chef.cookbooks_path = "cookbooks"` to `chef.cookbooks_path = "vagrant/cookbooks"`
-   * Run `vagrant up` to start up the VM
+   * Run `sudo vagrant plugin install vagrant-berkshelf` to install neccessary Vagrant plugin
+   * Copy [Vagrantfile](./Vagrantfile) and [Berkshelf](./Berkshelf) files into your project's root dir
+   * Set Vagrantile's `chef.lampapp.path` to your project's public web dir
+   * Run `vagrant up` to start the VM
    * Your web app is now available at [192.168.56.101](https://192.168.56.101/)
    * Run `vagrant halt` to power off the VM

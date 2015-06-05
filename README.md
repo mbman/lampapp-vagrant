@@ -12,7 +12,7 @@ Example usage of [LAMPapp](https://github.com/mbman/lampapp) Chef cookbook
 ## How to use
 
    * Run `sudo vagrant plugin install vagrant-berkshelf && sudo vagrant plugin install vagrant-bindfs` to install neccessary Vagrant plugin
-   * Copy [Vagrantfile](./Vagrantfile) and [Berkshelf](./Berkshelf) files into your project's root dir
+   * Copy [Vagrantfile](./Vagrantfile) and [Berksfile](./Berksfile) files to your project's root dir
    * Set Vagrantile's `chef.lampapp.path` to your project's public web dir
    * Run `vagrant up` to start the VM
    * Your web app is now available at [192.168.56.101](https://192.168.56.101/)

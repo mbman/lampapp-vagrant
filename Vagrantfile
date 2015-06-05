@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
 
     config.berkshelf.enabled = true
 
-    config.vm.synced_folder "./", "/var/www", id: "vagrant-root", :nfs => true
+    config.vm.synced_folder "./", "/var/www/vagrant", id: "vagrant-root", :nfs => true
 
     config.vm.provision "chef_solo" do |chef|
         chef.add_recipe "lampapp"
@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
                 :name => "vagrant",
                 :password => "foobar",
                 :ip => "192.168.56.101",
-                :path => "",
+                :path => "vagrant",
             },
             :php => {
                 :directives => {"date.timezone" => "Europe/Zagreb"}

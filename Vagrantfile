@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-    config.vm.hostname = "vagrat"
+    config.vm.hostname = "vagrant"
     config.vm.box = "scratchpads/debian8-2gb-chef"
 
     config.vm.network :private_network, ip: "192.168.56.101"
